@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+label {
+  margin: .5rem 0 0 0;
+}
+
+.header {
+  font-family: 'Courgette', cursive;
+  font-size: 3rem;
+  margin-top: -20rem;
+  margin-bottom: 3rem;
+}
+
+.square {
+  margin-top: 3rem;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
