@@ -55,3 +55,12 @@ function convertCtoF(temp) {
   let fahrenheit = Math.floor(temp * 1.8 + 32);
   return fahrenheit;
 }
+tempBox.addEventListener('click', () => {
+  let data = temp.innerHTML;
+  console.log(data);
+  if ((degree.innerHTML = ' F')) {
+    console.log('Converting to celsius...');
+    temp.innerHTML = convertFtoC(data);
+    degree.innerHTML = ' C';
+  }
+});
