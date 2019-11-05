@@ -10,8 +10,9 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
-  color: white;
+  /* background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)); */
+  background: linear-gradient(to bottom, #005c97, #363795);
+  color: lightskyblue;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
 }

@@ -26,13 +26,26 @@ input.addEventListener('keydown', (e) => {
 
     getWeather(city).then((data) => {
       console.log(data);
+      const initTemp = convertKtoF(data.main.temp);
+      const celsius = convertFtoC(initTemp);
       info.classList.remove('hide');
       info.classList.add('show');
       location.innerHTML = data.name;
-      temp.innerHTML = convertKtoF(data.main.temp);
+      temp.innerHTML = initTemp;
       description.innerHTML = data.weather[0].description;
       icon.appendChild(getIcon(data.weather[0].icon));
       event.innerHTML = data.weather[0].main;
+      tempBox.addEventListener('click', () => {
+        if (degree.innerHTML === 'F') {
+          console.log('Converting to celsius...');
+          temp.innerHTML = celsius;
+          degree.innerHTML = 'C';
+        } else {
+          console.log('Converting to F');
+          temp.innerHTML = initTemp;
+          degree.innerHTML = 'F';
+        }
+      });
     });
   }
 });
@@ -55,12 +68,3 @@ function convertCtoF(temp) {
   let fahrenheit = Math.floor(temp * 1.8 + 32);
   return fahrenheit;
 }
-tempBox.addEventListener('click', () => {
-  let data = temp.innerHTML;
-  console.log(data);
-  if ((degree.innerHTML = ' F')) {
-    console.log('Converting to celsius...');
-    temp.innerHTML = convertFtoC(data);
-    degree.innerHTML = ' C';
-  }
-});
