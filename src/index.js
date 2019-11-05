@@ -37,7 +37,6 @@ input.addEventListener('keydown', (e) => {
     let city = input.value;
     const proxy = 'https://cors-anywhere.herokuapp.com/';
     const api = `${proxy}api.openweathermap.org/data/2.5/weather?q=${city}&APPID=ed8cea7d8f1ace4966a60e851d68906e`;
-
     async function getWeather(city) {
       try {
         let response = await fetch(api);
