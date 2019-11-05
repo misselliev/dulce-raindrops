@@ -10,7 +10,6 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /* background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)); */
   background: linear-gradient(to bottom, #005c97, #363795);
   color: lightskyblue;
   font-family: 'Roboto', sans-serif;
@@ -28,8 +27,8 @@ img {
 .header {
   font-family: 'Courgette', cursive;
   font-size: 3rem;
-  margin-top: -20rem;
   margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px black;
 }
 
 .square {
