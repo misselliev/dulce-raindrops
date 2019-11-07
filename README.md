@@ -13,7 +13,7 @@ Weather web app built with JavaScript.
 
 There are two options to load this App.
 
-- Click [here](#) for the live version. //to be updated!
+- Click [here](https://misselliev.github.io/dulce-raindrops/) for live version.
 - Download the repo, checkout to **development** branch and load the `./dist/index.html` in your browser.
 
 ## Development and contributions
