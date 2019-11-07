@@ -3,4 +3,3 @@ linters:
     config: './eslint.config'
 files:
   ignore:
-    - 'semantic/*'
